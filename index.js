@@ -21,7 +21,7 @@ return 'Pentathlon';
 
 };
 
-// The scope of `days` is too tight 
+
 
 const getTrainingDays = event => {
 let days;
@@ -43,7 +43,7 @@ return days;
 
 };
 
-// The scope of `name` is too tight 
+
 
 const logEvent =  (name, event) => {
 
@@ -59,14 +59,14 @@ const logTime = (name, days) => {
 console.log(`${name}'s time to train is: ${days} days`);
 
 };
-// Move the name variable to global scope
+
 const name = 'Nala';
 
 const event = getRandEvent();
 
 const days = getTrainingDays(event);
 
-// Define a `name` variable. Use it as an argument after updating logEvent and logTime 
+
 
 logEvent( name, event);
 
